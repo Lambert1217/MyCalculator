@@ -3,6 +3,7 @@
 
 #include <QMainWindow>
 #include "calculator.h"
+#include <QApplication>
 
 namespace Ui {
 class MainWindow;
