@@ -2,7 +2,7 @@
 #define MYLSTACK_H
 
 /**
- * Create by ÁõÑÇÆæ on 2022/10/15
+ * Create by åˆ˜äºšå¥‡ on 2022/10/15
  */
 
 #include "link.h"
@@ -17,22 +17,22 @@ private:
     int size; //size of the stack
 public:
     MyLStack(){top = nullptr; size = 0;}
-    ~MyLStack(){clear();} //Îö¹¹
+    ~MyLStack(){clear();} //ææ„
     void clear(){
-        //±éÀúdeleteËùÓĞ½áµã
+        //éå†deleteæ‰€æœ‰ç»“ç‚¹
         while(top != nullptr){
             Link<Elem> *temp = top;
             top = top->next;
             delete temp;
         }
-        size = 0; //size ¹éÁã
+        size = 0; //size å½’é›¶
     }
-    //Ñ¹Õ»
+    //å‹æ ˆ
     void push(Elem& item){
         top = new Link<Elem>(item,top);
         size++;
     }
-    //µ¯Õ»
+    //å¼¹æ ˆ
     Elem pop(){
         assert(top != nullptr);
         Link<Elem> *temp = top;
@@ -42,12 +42,12 @@ public:
         delete temp;
         return item;
     }
-    //·µ»ØÕ»Í·½áµãµÄelement
+    //è¿”å›æ ˆå¤´ç»“ç‚¹çš„element
     Elem topValue() const{
         assert(top != nullptr);
         return top->element;
     }
-    //·µ»ØÕ»µÄ´óĞ¡
+    //è¿”å›æ ˆçš„å¤§å°
     int length() const{
         return size;
     }

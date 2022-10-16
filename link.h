@@ -2,7 +2,7 @@
 #define LINK_H
 
 /**
- * Create by ÁõÑÇÆæ on 2022/10/15
+ * Create by åˆ˜äºšå¥‡ on 2022/10/15
  */
 #include <cstddef>
 
@@ -22,7 +22,7 @@ public:
     Link(Link* nextval = nullptr){
         next = nextval;
     }
-    //ÖØĞ´newºÍdelete
+    //é‡å†™newå’Œdelete
     void* operator new(size_t){
         if(freelist == nullptr) return ::new Link;
         Link<Elem>* temp = freelist;

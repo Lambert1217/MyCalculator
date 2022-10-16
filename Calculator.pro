@@ -26,13 +26,13 @@ DEFINES += QT_DEPRECATED_WARNINGS
 SOURCES += \
         main.cpp \
         mainwindow.cpp \
-    link.cpp \
-    Mylstack.cpp
+    calculator.cpp
 
 HEADERS += \
         mainwindow.h \
     link.h \
-    Mylstack.h
+    mylstack.h \
+    calculator.h
 
 FORMS += \
         mainwindow.ui
